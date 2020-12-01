@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Hello from './Hello';
 import reportWebVitals from './reportWebVitals';
+import 'tachyons';
 
 ReactDOM.render(
   <React.StrictMode>
-  <Hello />
+    {/* eslint-disable-next-line no-useless-concat */}
+  <Hello greeting={'Hello' + 'React ninja'} />
   </React.StrictMode>,
   document.getElementById('root')
 );
